@@ -1,0 +1,45 @@
+body {
+    background-color: #282c34;
+    color: white;
+    padding: 40px;
+    font-family: Arial;
+    text-align: center;
+}
+
+input[type=text] {
+    background-color: #565656;
+    color: white;
+}
+
+input[type=number] {
+    background-color: #565656;
+    color: white;
+}
+
+input[type=date] {
+    background-color: #565656;
+    color: white;
+}
+
+input[type=email] {
+    background-color: #565656;
+    color: white;
+}
+
+input[type=password] {
+    background-color: #565656;
+    color: white;
+}
+input[type=phone] {
+    background-color: #565656;
+    color: white;
+}
+
+.out {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 100px;;
+}
+
+

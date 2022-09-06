@@ -1,0 +1,50 @@
+{
+  "name": "crud-patients",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "10": "0.0.1",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/icons-material": "^5.10.2",
+    "@mui/material": "^5.10.2",
+    "acorn": "^8.4.1",
+    "aws-amplify": "^4.2.4",
+    "aws-amplify-react": "^5.0.10",
+    "axios": "^0.27.2",
+    "esri-loader": "^3.2.0",
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21",
+    "mem": "^9.0.1",
+    "minimist": "^1.2.5",
+    "moment": "^2.29.4",
+    "nanoid": "^4.0.0",
+    "normalize.css": "^8.0.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-router": "5.2.0",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "5.0.1",
+    "sass": "^1.54.8",
+    "set-value": "^4.0.0",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
