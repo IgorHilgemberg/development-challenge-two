@@ -9,10 +9,10 @@ import Fab from '@mui/material/Fab';
 
 
 const apiName = 'CRUDPatients';
-const apiPath="/patient"
+const apiPath = "/patient"
 
 const date = new Date();
-const current_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
+const current_date = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
 
 
 const style = {
@@ -50,14 +50,14 @@ function RegistrationForm(props) {
 
     async function getData() {
         const apiRequest = {
-          headers: {
-            'Content-Type': 'application/json'
-          }
+            headers: {
+                'Content-Type': 'application/json'
+            }
         };
         return await API.get(apiName, apiPath, apiRequest);
-      }
+    }
 
-    const submitForm =async (e) => {
+    const submitForm = async (e) => {
         e.preventDefault();
         props.isLoading();
         await props.addPatient({
@@ -70,7 +70,7 @@ function RegistrationForm(props) {
             houseNumber: addFormData.houseNumber,
             zipCode: addFormData.zipCode,
         });
-        await props.updateList().then(()=>props.isLoading());
+        await props.updateList().then(() => props.isLoading());
     }
 
     return (
@@ -108,7 +108,7 @@ function RegistrationForm(props) {
                                 <input
                                     type="date"
                                     min="1900-01-01"
-                                max = {Date("yyyy-MM-dd")}
+                                    max={current_date}
                                     className={styles.formControl}
                                     name="birthday"
                                     onChange={e => setAddFormData({ ...addFormData, 'birthday': e.target.value })}
@@ -183,7 +183,7 @@ function RegistrationForm(props) {
                                 />
                             </div>
                             <div>
-                                <Button variant="contained"  type="submit">Cadastrar</Button>
+                                <Button variant="contained" type="submit">Cadastrar</Button>
                             </div>
                         </form>
                     </Box>

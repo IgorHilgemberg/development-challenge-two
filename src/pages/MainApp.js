@@ -80,15 +80,15 @@ class MainApp extends React.Component {
 
   async updateData(id) {
     console.log(id);
-    if(id===""){
-    let response = await this.getData();
+    if(id==="" || id===undefined){
+    const response = await this.getData();
     return this.setState({ dataSource: response });  
   
   }else{
       const response = await this.getPatientById(id);
       console.log(response);
       if(Object.keys(response).length===0){
-        console.log("Nenhum paciente com essa id!");
+        alert("Nenhum paciente com essa id!");
         const response = await this.getData();
         this.setState({ dataSource: response }); 
       return;  
